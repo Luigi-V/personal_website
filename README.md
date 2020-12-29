@@ -1,2 +1,2 @@
-# personal_website
-description of skills and personal traits
+# PERSONAL WEBSITE:
+https://luigi-v.github.io/personal_website/

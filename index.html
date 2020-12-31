@@ -2,160 +2,137 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{
-    background-color: #323232;
-}
-h1, h2, h3, h4, b, td, th {
-    text-align: left;
-    color: #000000;
-}
-table{
-    width:100%;
-}
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-ul{
-    list-style-type: square;
-}
-.main-div{
-    background-color: #ffffff;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 5%;
-}
-.titolo{
-    color: #ffffff;
-    background-color: #000000;
-    padding-left: 3px;
-    padding-right: 3px;
-    text-align: left;
-}
-</style>
+    <style>
+        body {
+            background-color: #141615;
+        }
+
+        h1, h2, h3, h4, b, p, li {
+            text-align: left;
+            color: #eef2ff;
+            font-family: 'Calibri';
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        .main-div {
+            margin-top: 20px;
+            background-color: #151e2a;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding: 5%;
+        }
+
+        .titolo {
+            background-color: #8f0f28;
+            font-size: 16px;
+            padding-left: 3px;
+            padding-right: 3px;
+            text-align: left;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #141615;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 3px;
+        }
+
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="navbar">
+        <a href="" onclick="window.location.reload(true);"><img src="logo-personale.png" alt="logo-personale"
+                style="width:450px;"></a>
+    </div>
     <div class="main-div">
-<!-- TABELLA RELATIVA ALL'INTESTAZIONE-->
-    <table>
-        <tr>
-            <td><img src="FotoLV.png" alt="personal_foto"></td>
-            <td><h1><b>VOLLONO LUIGI</b></h1>
-                <br><b>Studente</b>
-            </td>
-        </tr>              
-    </table>
-<!-- TABELLA RELATIVA AL "INFO PERSONALI"-->
-    <table>
-        <tr>
-            <td><br><b class="titolo">INFO PERSONALI</b></td>
-        </tr>
-        <tr>
-            <th><b>Contatti</b></th>
-            <th><b>Data e luogo di nascita</b></th>
-        </tr>
-        <tr>
-            <td>vollonoluigi@hotmail.com <br>
-                338 703 2555</td>
-            <td>30/03/1998 <br>
-                Castellammare di Stabia (NA)</td>
-        </tr>  
-    </table>
-<!-- TABELLA RELATIVA AL "PROFILO PERSONALE"-->
-    <table>
-        <tr>
-            <th><br><b class="titolo">PROFILO PERSONALE</b></th>
-        </tr>
-        <tr>
-            <td>Ottime capacità nel risolvere vari problemi, cercando di trovare la soluzione più breve e corretta, grazie a diverse tecniche acquisite durante i vari corsi universitari. <br>
-                Buone capacità di lavorare in gruppo, maturate con progetti di gruppo universitari, cercando anche di dare una mano a chi si trovava in difficoltà durante lo sviluppo del progetto. Un progetto universitario che ha aiutato a sviluppare tali capacità è stato quello di produrre un’applicazione che consisteva, in modo semplificato, di convalidare esami di lingua inglese e/o tirocini esterni. <br>
-                Capacità di lavorare in situazioni di stress, legate alla scadenza fiscale delle attività lavorative, con un’ottima flessibilità alla mansione, maturata durante un progetto universitario nel quale consisteva nel produrre determinate documentazioni e componenti software in un tempo prestabilito. <br>
-                Ho partecipato a progetti di gruppo, in ambito universitario, come sviluppo di sistemi interattivi, come siti web, e realizzazione della relativa documentazione progettuale, adottando concetti dell’ingegneria del software. <br>
-                Da sempre avente una passione per i videogiochi, che mi coinvolgono nel tempo libero. Propenso a varie attività sportive, come pesistica, che mi portano a frequentare palestre pubbliche, nelle quali socializzo e mi piace stare. <br>
-                Ho conseguito l’attestato ECDL full standard. <br>
-            </td>
-        </tr>
-    </table>
-<!-- TABELLA RELATIVA A "ISTRUZIONE E FORMAZIONE"-->
-    <table>
-        <tr>
-            <th><br><b class="titolo">ISTRUZIONE E FORMAZIONE</b></th>
-        </tr>
-        <tr>
-            <th><b>Laurea triennale in Informatica, Università degli Studi di Salerno, Salerno</b></th>            
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>2017 – in corso</li>
-                    <li>139 CFU conseguiti su 180</li>
-                    <li>Media voti 25</li>
-                </ul>  
-            </td>
-        </tr>
-        <tr>
-            <th><b>Diploma di scuola superiore, Istituto Tecnico Industriale Renato Elia indirizzo “Informatica e Telecomunicazioni” con articolazione in “Informatica”, Castellammare di Stabia</b></th>            
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>2012 – 2017</li>
-                    <li>Voto finale 80/100</li>
-                </ul>  
-            </td>
-        </tr>
-    </table>
-<!-- TABELLA RELATIVA A "COMPETENZE"-->
-    <table>
-        <tr>
-            <th><br><b class="titolo">COMPETENZE</b></th>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Conoscenza di linguaggi di programmazione Object Oriented - Java, Javascript, Python e C++</li>
-                    <li>Conoscenza di linguaggi di programmazione procedurali - C e Pascal</li>
-                    <li>Programmazione Web lato client/server - Java EE</li>
-                    <li>Gestione database - SQL</li>
-                    <li>Programmazione applicazioni Android (con Java)</li>
-                    <li>Conoscenza di concetti teorici di reti di calcolatori</li>
-                    <li>Utilizzo pacchetto office - Word, Powerpoint, ecc...</li>
-                    <li>Conoscenza comandi da shell su sistemi Ubuntu</li>
-                    <li>Modifica di immagini e loghi - GIMP</li>
-                    <li>Concetti teorici di modelli di computazione - Macchina di Turing e Automi </li>
-                    <li>Conoscenze sulla misurazione della complessità computazionale degli algoritmi</li>
-                    <li>Conoscenze di tecnologie e sistemi di sicurezza - Blockchian, TLS/SSL e vari cifrari</li>
-                </ul>  
-            </td>
-        </tr>
-    </table>
-<!-- TABELLA RELATIVA AL "CV"-->
-    <table>
-        <tr>
-            <th><br><b class="titolo">CURRICULUM VITAE</b></th>
-        </tr>
-        <tr>
-            <td>
-                <p>Link al <a href="https://github.com/Luigi-V/personal_website/raw/main/CV%20-%20VollonoLuigi.pdf">CURRICULUM VITAE</a></p>
-            </td>
-        </tr>
-    </table>
-<!-- TABELLA RELATIVA ALLA "TESI"-->
-    <table>
-        <tr>
-            <th><br><b class="titolo">TESI</b></th>
-        </tr>
-        <tr>
-            <td>
-                <p>Link alla <a href="">TESI</a> (A breve)</p>
-            </td>
-        </tr>
-    </table>        
-        
-    <br>
-    <p style="text-align: center; color: #000000;">Aggiornato il 29/12/2020</p>
+        <img src="logo-PcAndSmatphone.png" alt="logo-PcAndSmartphone" style="width:100%; max-width: 500px;">
+
+        <!-- TABELLA RELATIVA AL "CONTATTI"-->
+        <div>
+            <p><b class="titolo">CONTATTI</b></p>
+            <p>vollonoluigi@hotmail.com <br> 338 703 2555</p>
+            <br>
+        </div>
+        <!-- TABELLA RELATIVA AL "PROFILO PERSONALE"-->
+        <div>
+            <p><b class="titolo">PROFILO PERSONALE</b></p>
+            <p>Da sempre avente una passione per i videogiochi, che riempiono il mio tempo libero. <br>
+                Un altra passione è la palestra, nella quale mi piace stare, adoperando attività sportive come la
+                pesistica. <br>
+                Ma la mia passione principale è l'informatica, la quale ho appreso e imparato molto volentieri. <br>
+                Per quanto riguarda le mie capacità, ho lavorato a progetti universitari, i quali mi hanno insegnato a
+                sviluppare software, lavorando in gruppo e in situazioni di stress dovute alle scadenze fiscali delle
+                attività lavorative.</p>
+
+        </div>
+        <!-- TABELLA RELATIVA A "ISTRUZIONE E FORMAZIONE"-->
+        <div>
+            <br>
+            <p><b class="titolo">ISTRUZIONE E FORMAZIONE</b></p>
+            <p><b>Laurea triennale in Informatica, Università degli Studi di Salerno, Salerno</b></p>
+            <ul>
+                <li>2017 – in corso</li>
+                <li>139 CFU conseguiti su 180</li>
+                <li>Media voti 25</li>
+            </ul>
+            <p><b>Diploma di scuola superiore, Istituto Tecnico Industriale Renato Elia indirizzo “Informatica e
+                    Telecomunicazioni” con articolazione in “Informatica”, Castellammare di Stabia</b></p>
+            <ul>
+                <li>2012 – 2017</li>
+                <li>Voto finale 80/100</li>
+            </ul>
+        </div>
+        <!-- TABELLA RELATIVA A "COMPETENZE"-->
+        <div>
+            <br>
+            <p><b class="titolo">COMPETENZE</b></p>
+            <ul>
+                <li>Conoscenza di linguaggi di programmazione Object Oriented - Java, Javascript, Python e C++</li>
+                <li>Conoscenza di linguaggi di programmazione procedurali - C e Pascal</li>
+                <li>Programmazione Web lato client/server - Java EE</li>
+                <li>Gestione database - SQL</li>
+                <li>Programmazione applicazioni Android (con Java)</li>
+                <li>Conoscenza di concetti teorici di reti di calcolatori</li>
+                <li>Utilizzo pacchetto office - Word, Powerpoint, ecc...</li>
+                <li>Conoscenza comandi da shell su sistemi Ubuntu</li>
+                <li>Modifica di immagini e loghi - GIMP</li>
+                <li>Concetti teorici di modelli di computazione - Macchina di Turing e Automi </li>
+                <li>Conoscenze sulla misurazione della complessità computazionale degli algoritmi</li>
+                <li>Conoscenze di tecnologie e sistemi di sicurezza - Blockchian, TLS/SSL e vari cifrari</li>
+            </ul>
+        </div>
+        <!-- TABELLA RELATIVA AL "CURRICULUM VITAE"-->
+        <div>
+            <br>
+            <p><b class="titolo">CURRICULUM VITAE</b></p>
+            <p>Link al <a
+                    href="https://github.com/Luigi-V/personal_website/raw/main/CV%20-%20VollonoLuigi.pdf">CURRICULUM
+                    VITAE</a></p>
+        </div>
+        <!-- TABELLA RELATIVA ALLA "TESI"-->
+        <div>
+            <br>
+            <p><b class="titolo">TESI</b></p>
+            <p>Link alla <a href="">TESI</a> (A breve)</p>
+        </div>
     </div>
 </body>
+
 </html>

@@ -4,154 +4,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-color: #141615;
-        }
-        h1, h2, h3, h4, b, p, li {
-            text-align: left;
-            color: #eef2ff;
-            font-family: 'Calibri';
-        }
-        ul {
-            list-style-type: square;
-        }
-        .main-div {
-            margin-top: 20px;
-            background-color: #151e2a;
-            margin-left: 2%;
-            margin-right: 2%;
-            padding: 5%;
-        }
-        .titolo {
-            background-color: #8f0f28;
-            font-size: 16px;
-            padding-left: 3px;
-            padding-right: 3px;
-            text-align: left;
-        }
-        .navbar {
-            overflow: hidden;
-            background-color: #141615;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 3px;
-        }
-        .navbar a {
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            text-decoration: none;
-        }
-        img {
+            background-color: #1e4f8d;
+            font-family: 'Consolas';
+            color: white;
+            background-image: url('wallpaper1.jpg');
+            background-size: 2000px;
+            background-attachment: fixed;
+            background-position: center bottom;
+            background-repeat: repeat-x;            
+        }       
+
+        /*Navigation bar*/
+        img { 
             display: block;
             margin-left: auto;
             margin-right: auto;
+            max-width: 220px;
         }
+        .navbar {
+            overflow: hidden;
+            background-color: #000000;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            position:fixed;
+            left:0;
+        }
+
+        .content{
+            margin-top: 70px;
+            margin-bottom: 300px;
+        }
+
+        /*Animation flicker*/
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%{
+                box-shadow: rgba(255, 255, 255, 0.50) 0px 10px 10px 10px;
+            }
+            20%, 24%{
+                box-shadow: rgba(255, 255, 255, 0.50) 0px 10px 10px 5px;
+            }
+        }
+        /*Window style prompt*/        
+        .window{
+            background-color: white;
+            max-width: 500px;
+            margin: 10px auto;             
+            animation: flicker 3s infinite alternate;
+        }
+        .title{
+            color: #01081a;
+            font-size: 16px;
+            padding-left: 5px;
+        }
+        .content-window{
+            background-color: #01081a;
+            padding: 2px 5px;
+        }
+        /*Element formatting*/
+        ul {
+            list-style-type: square;
+        }
+        li {
+            padding-bottom: 5px;
+        }
+        p {
+            padding-left: 10px;
+        }
+    
         a:link, a:visited {
-            color: #83d4f8;
+            color: #14ddef;
             background-color: transparent;
             text-decoration: none;
         }
         a:hover, a:active {
-            color: #873948;
+            color: white;
             background-color: transparent;
             text-decoration: underline;
         }
+        
     </style>
 </head>
 
 <body>
     <div class="navbar">
-        <a href="" onclick="window.location.reload(true);"><img src="logo-personale.png" alt="logo-personale"
-                style="width:400px;"></a>
+        <a href="" onclick="window.location.reload(true);"><img src="logo-personale.jpg" alt="logo-personale"></a>
     </div>
-    <div class="main-div">
-
+    <div class="content">
         <!-- TABELLA RELATIVA AL "CONTATTI"-->
-        <div>
-            <p><b class="titolo">CONTATTI</b></p>
-            <p>-E-MAIL      : vollonoluigi@hotmail.com
-           <br>-GITHUB      : <a href="https://github.com/Luigi-V">Luigi-V</a>
-           <br>-LINKEDLN:   : <a href="https://www.linkedin.com/in/luigi-vollono-329660196/">Luigi Vollono</a>
-           <br>-TELEGRAM    : @Ligi98
-           <br>-INSTAGRAM   : <a href="https://www.instagram.com/luigivollono_/">luigivollono_</a>
-           <br>-FACEBOOK    : <a href="https://www.facebook.com/luigi.g.vollono">Vollono Luigi</a>           
-           <br>-TWITTER     : <a href="https://twitter.com/2555_338">LuigiVollono</a>           
-            </p>
+        <div class="window">
+            <b class="title">CONTATTI</b>
+            <div class="content-window">
+                <p>> Contatti e profili personali:</p>
+                <ul>
+                    <li>E-MAIL      : vollonoluigi@hotmail.com</li>
+                    <li>GITHUB      : <a href="https://github.com/Luigi-V">Luigi-V</a></li>
+                    <li>LINKEDLN    : <a href="https://www.linkedin.com/in/luigi-vollono-329660196/">Luigi Vollono</a></li>
+                    <li>TELEGRAM    : @Ligi98</li>
+                    <li>INSTAGRAM   : <a href="https://www.instagram.com/luigivollono_/">luigivollono_</a></li>
+                    <li>FACEBOOK    : <a href="https://www.facebook.com/luigi.g.vollono">Vollono Luigi</a></li>
+                    <li>TWITTER     : <a href="https://twitter.com/2555_338">LuigiVollono</a></li>
+                </ul>
+            </div>
         </div>
-        <!-- TABELLA RELATIVA AL "CURRICULUM VITAE"-->
-        <div>
-            <br>
-            <p><b class="titolo">CURRICULUM VITAE</b></p>
-            <p>Link al <a
-                    href="https://github.com/Luigi-V/personal_website/blob/main/CV%20-%20VollonoLuigi.pdf">CURRICULUM
-                    VITAE</a>
-            <br>Download (pdf) del <a
-                    href="https://github.com/Luigi-V/personal_website/raw/main/CV%20-%20VollonoLuigi.pdf">CURRICULUM
-                    VITAE</a></p>
-        </div>        
+        <br>
         <!-- TABELLA RELATIVA A "COMPETENZE"-->
-        <div>
-            <br>
-            <p><b class="titolo">COMPETENZE</b></p>
-            <ul>
-                <li>Conoscenze di tecnologie e sistemi di sicurezza - Blockchain, TLS/SSL e vari cifrari</li>
-                <li>Conoscenza generica di attacchi di crittoanalisi</li>
-                <li>Conoscenza di linguaggi di programmazione Object Oriented - Java, Javascript, Python e C++</li>
-                <li>Conoscenza di linguaggi di programmazione procedurali - C e Pascal</li>
-                <li>Programmazione Web lato client/server - Java EE</li>
-                <li>Linguaggio per database - SQL</li>
-                <li>Tecnologie per la persistenza dei dati - NoSQL</li>
-                <li>Conoscenza di DBMS - MongoDB, MySQL</li>
-                <li>Programmazione applicazioni Android (con Java)</li>
-                <li>Conoscenza di concetti teorici di reti di calcolatori</li>                
-                <li>Concetti teorici di modelli di computazione - Macchina di Turing e Automi </li>
-                <li>Conoscenze sulla misurazione della complessità computazionale degli algoritmi</li>
-                <li>Modifica di immagini e loghi - GIMP</li>
-                <li>Conoscenza comandi da shell su sistemi Ubuntu</li>
-                <li>Utilizzo pacchetto office - Word, Powerpoint, ecc...</li>
-            </ul>
+        <div class="window">
+            <b class="title">COMPETENZE</b>
+            <div class="content-window">
+                <p>> Competenze personali:</p>
+                <ul>
+                    <li>Conoscenze di tecnologie e sistemi di sicurezza - <i>Blockchain, TLS/SSL e vari cifrari</i></li>
+                    <li>Conoscenza generica di crittoanalisi</li>
+                    <li>Conoscenza di linguaggi di programmazione Object Oriented - <i>Java, Javascript, Python e C++</i></li>
+                    <li>Conoscenza di linguaggi di programmazione procedurali - <i>C e Pascal</i></li>
+                    <li>Programmazione Web lato client/server - <i>Java EE</i></li>
+                    <li>Linguaggio per database - <i>SQL</i></li>
+                    <li>Tecnologie per la persistenza dei dati - <i>NoSQL</i></li>
+                    <li>Conoscenza di DBMS - <i>MongoDB, MySQL</i></li>
+                    <li>Programmazione applicazioni Android (con Java)</li>
+                    <li>Conoscenza di concetti teorici di reti di calcolatori</li>                
+                    <li>Concetti teorici di modelli di computazione - Macchina di Turing e Automi </li>
+                    <li>Conoscenze sulla misurazione della complessità computazionale degli algoritmi</li>
+                    <li>Modifica di immagini e loghi - GIMP</li>
+                    <li>Conoscenza comandi da shell su sistemi Ubuntu</li>
+                    <li>Utilizzo pacchetto office - Word, Powerpoint, ecc...</li>
+                </ul>
+            </div>
         </div>
+        <br>
         <!-- TABELLA RELATIVA A "ISTRUZIONE E FORMAZIONE"-->
-        <div>
-            <br>
-            <p><b class="titolo">ISTRUZIONE E FORMAZIONE</b></p>
-            <p><b>Laurea magistrale in Sicurezza Informatica, Università degli Studi di Salerno, Salerno (NA)</b></p>
-            <ul>
-                <li>2021 - In corso</li>
-            </ul>
-            <p><b>Laurea triennale in Informatica, Università degli Studi di Salerno, Salerno (NA)</b></p>
-            <ul>
-                <li>2017 – 2021</li>
-                <li>180 CFU conseguiti su 180</li>
-                <li>Media voti 25</li>
-                <li>Voto finale 99/110</li>
-            </ul>
-            <p><b>Diploma di scuola superiore, Istituto Tecnico Industriale Renato Elia indirizzo “Informatica e
-                    Telecomunicazioni” con articolazione in “Informatica”, Castellammare di Stabia (NA)</b></p>
-            <ul>
-                <li>2012 – 2017</li>
-                <li>Voto finale 80/100</li>
-            </ul>
+        <div class="window">
+            <b class="title">ISTRUZIONE E FORMAZIONE</b>
+            <div class="content-window">
+                <p>> Laurea magistrale in Sicurezza Informatica, Università degli Studi di Salerno, Salerno (NA):</p>
+                <ul>
+                    <li>2021 - In corso</li>
+                </ul>
+                <p>> Laurea triennale in Informatica, Università degli Studi di Salerno, Salerno (NA):</p>
+                <ul>
+                    <li>2017 – 2021</li>
+                    <li>180 CFU conseguiti su 180</li>
+                    <li>Media voti 25</li>
+                    <li>Voto finale 99/110</li>
+                </ul>
+                <p>> Diploma di scuola superiore, Istituto Tecnico Industriale Renato Elia indirizzo “Informatica e
+                        Telecomunicazioni” con articolazione in “Informatica”, Castellammare di Stabia (NA):</p>
+                <ul>
+                    <li>2012 – 2017</li>
+                    <li>Voto finale 80/100</li>
+                </ul>
+            </div>
         </div>
+        <br>
         <!-- TABELLA RELATIVA ALLA "TESI"-->
-        <div>
-            <br>
-            <p><b class="titolo">TESI LAUREA TRIENNALE</b></p>
-            <p>Link alla tesi: <a href="https://github.com/Luigi-V/personal_website/blob/main/Tesi_VollonoLuigi.pdf">ROAMING TELEFONICO DI NUOVA GENERAZIONE CON HYPERLEDGER FABRIC</a>
-            <br>Download (pdf) della tesi: <a href="https://github.com/Luigi-V/personal_website/raw/main/Tesi_VollonoLuigi.pdf">ROAMING TELEFONICO DI NUOVA GENERAZIONE CON HYPERLEDGER FABRIC</a></p>
+        <div class="window">
+            <b class="title">TESI LAUREA TRIENNALE</b>
+            <div class="content-window">
+                <p>Link alla tesi: <a href="https://github.com/Luigi-V/personal_website/blob/main/Tesi_VollonoLuigi.pdf">ROAMING TELEFONICO DI NUOVA GENERAZIONE CON HYPERLEDGER FABRIC</a>
+                <br>Download (pdf) della tesi: <a href="https://github.com/Luigi-V/personal_website/raw/main/Tesi_VollonoLuigi.pdf">ROAMING TELEFONICO DI NUOVA GENERAZIONE CON HYPERLEDGER FABRIC</a></p>
+            </div>
         </div>
+        <br>
         <!-- TABELLA RELATIVA AI "PROGETTI"-->
-        <div>
-            <br>
-            <p><b class="titolo">PROGETTI A CUI HO LAVORATO</b></p>
-            <ul>
-                <li><a href="https://github.com/frekkanzer2/VGSalesDataAnalyzer">VGSalesDataAnalyzer</a></li>
-                <li><a href="https://github.com/Luigi-V/GameOn-Project">GameOn</a></li>
-                <li><a href="https://github.com/Luigi-V/DB-SQL">DB-SQL</a></li>                
-            </ul>
+        <div class="window">
+            <b class="title">PROGETTI A CUI HO LAVORATO</b>
+            <div class="content-window">
+                <ul>
+                    <li><a href="https://github.com/frekkanzer2/VGSalesDataAnalyzer">VGSalesDataAnalyzer</a></li>
+                    <li><a href="https://github.com/Luigi-V/GameOn-Project">GameOn</a></li>
+                    <li><a href="https://github.com/Luigi-V/DB-SQL">DB-SQL</a></li>                
+                </ul>
+            </div>
         </div>
-    </div>
+        <br>
+    </div>    
 </body>
 
 </html>

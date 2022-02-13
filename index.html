@@ -60,9 +60,17 @@
         /*Window style prompt*/        
         .window{
             background-color: white;
-            max-width: 350px;
+            max-width: 800px;
             margin: 10px auto;             
             animation: flicker 3s infinite alternate;
+        }
+        @media only screen and (max-width: 450px) {
+            .window {
+                background-color: white;
+                max-width: 350px;
+                margin: 10px auto;             
+                animation: flicker 3s infinite alternate;
+            }
         }
         .title{
             color: #01081a;
